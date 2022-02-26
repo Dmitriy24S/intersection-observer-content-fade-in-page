@@ -61,3 +61,10 @@ content.forEach((info) => {
   contentObserver.observe(info);
 });
 contentObserver.observe(aboutSection);
+
+// nav toggle menu
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".main-nav");
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
