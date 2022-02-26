@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Intersection Observer - Demo</title>
+    <!-- font -->
+    <link
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="observers.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="#" class="site-logo" aria-label="homepage">IntObs</a>
+        <!-- nav toggle -->
+        <button type="button" class="nav-toggle">
+          <span class="sr-only">Navigation Menu</span>
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- nav -->
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__list-item"><a href="#" class="nav__link">Blog</a></li>
+          </ul>
+        </nav>
+        <nav class="account">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link nav__link--btn" href="#">Login</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#">Join</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section class="home-intro">
+        <h1>Intersection Observer is pretty useful</h1>
+      </section>
+      <!-- text section -->
+      <section class="home-about">
+        <div class="home-about_header-wrapper">
+          <div class="home-about_header">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="columns">
+          <div class="col">
+            <h3>Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maiores fuga eos
+              provident voluptas perferendis.
+            </p>
+          </div>
+          <div class="col">
+            <h3>A, illo!</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima quo
+              beatae eius blanditiis officiis.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Repudiandae, error?</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum quasi quis doloribus
+              quia illum laudantium.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- text / img section -->
+      <section class="section-bg-wrapper">
+        <!-- single item -->
+        <article class="content-container">
+          <div class="img-container">
+            <img src="https://unsplash.it/400" alt="" class="img" />
+          </div>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero
+            sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque
+            consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+            cupiditate debitis facilis quibusdam magni. Eveniet.
+          </p>
+        </article>
+        <!-- single item -->
+        <article class="content-container">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero
+            sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque
+            consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+            cupiditate debitis facilis quibusdam magni. Eveniet.
+          </p>
+          <div class="img-container">
+            <img src="https://unsplash.it/401" alt="" class="img" />
+          </div>
+        </article>
+        <!-- single item -->
+        <article class="content-container">
+          <div class="img-container">
+            <img src="https://unsplash.it/400" alt="" class="img" />
+          </div>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero
+            sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque
+            consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+            cupiditate debitis facilis quibusdam magni. Eveniet.
+          </p>
+        </article>
+        <!-- single item -->
+        <article class="content-container">
+          <p class="from-left text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero
+            sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque
+            consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+            cupiditate debitis facilis quibusdam magni. Eveniet.
+          </p>
+          <div class="img-container">
+            <img src="https://unsplash.it/401" alt="" class="img" />
+          </div>
+        </article>
+        <!-- single item -->
+        <article class="content-container">
+          <div class="img-container">
+            <img src="https://unsplash.it/400" alt="" class="img" />
+          </div>
+          <p class="from-right text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero
+            sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque
+            consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+            cupiditate debitis facilis quibusdam magni. Eveniet.
+          </p>
+        </article>
+        <!-- single item -->
+        <article class="content-container">
+          <p class="from-left text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit, quae beatae vero
+            sit magni quaerat id ratione. Dolor optio unde amet omnis sapiente neque cumque
+            consequuntur reiciendis deserunt. Dolorem vero exercitationem consequuntur, eligendi
+            cupiditate debitis facilis quibusdam magni. Eveniet.
+          </p>
+          <div class="img-container from-right">
+            <img src="https://unsplash.it/401" alt="" class="img" />
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
