@@ -4,8 +4,7 @@ const header = document.querySelector("header");
 const heroCenter = document.querySelector(".home-intro");
 
 const blackNavOptions = {
-  threshold: 1,
-  rootMargin: "-300px 0px -300px 0px",
+  rootMargin: "-200px 0px -200px 0px",
 };
 const heroTitle = heroCenter.getElementsByTagName("h1");
 
